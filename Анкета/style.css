@@ -1,20 +1,30 @@
 html {
   display: flex;
   justify-content: center;
-
+  align-items: center;
+  align-content: center;
   position: relative;
-  background-color: #ff747f;
+  background-color: #c7c7c7;
 }
 
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  background-color: #c7c7c7;
+}
 .card {
   display: flex;
-  width: 1000px;
+  width: 80%;
 
   background: linear-gradient(
-    18deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(244, 0, 161, 1) 50%,
-    rgba(158, 27, 50, 1) 100%
+    90deg,
+    rgba(114, 111, 111, 0.521) 0%,
+    rgba(235, 235, 235, 0.541) 50%,
+    rgba(119, 118, 118, 0.459) 100%
   );
   flex-direction: column;
   text-align: center;
@@ -22,7 +32,7 @@ html {
   box-shadow: 0 0 10px 10px #381e2e9c;
   overflow: hidden;
   text-wrap: wrap;
-  color: aliceblue;
+  color: rgb(37, 23, 21);
   justify-content: center;
   align-items: center;
   position: relative;
@@ -30,7 +40,7 @@ html {
 
 .cadrincard {
   display: flex;
-  box-shadow: 0 0 10px 10px #0000009c;
+  box-shadow: 0 0 10px 10px #41383894;
   width: 60%;
   flex-direction: column;
   text-align: center;
@@ -47,8 +57,13 @@ h3 {
   font-family: sans-serif;
 }
 
+.imgbox {
+  width: 80%;
+}
 img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 a,
@@ -71,7 +86,69 @@ a:hover {
   font-size: 24px;
 }
 
+li,
 p {
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 18px;
+}
+
+p {
+  text-align: left;
+}
+.bio,
+.mental {
+  width: 80%;
+  display: block;
+  height: 200px;
+  overflow-y: scroll;
+  text-wrap: wrap;
+  transition:
+    scale 200ms,
+    box-shadow 200ms;
+}
+
+.bio:hover,
+.mental:hover {
+  scale: 1.02;
+  box-shadow: 0 0 10px 10px #381e2e9c;
+}
+
+.wrapper {
+  display: flex;
+  gap: 20px; /* расстояние между колонками */
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.left {
+  flex: 1; /* занимает половину */
+  min-height: 400px;
+  background: #ddd;
+  border: 4px solid black;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* расстояние между 2 и 3 */
+}
+
+.top,
+.bottom {
+  flex: 1; /* делим высоту поровну */
+  background: #ddd;
+  border: 4px solid black;
+}
+
+.left,
+.top,
+.bottom {
+  overflow: hidden;
+  box-shadow: 0 0 10px 10px #381e2e9c;
+}
+
+.left .right {
+  border-radius: 10px;
 }
