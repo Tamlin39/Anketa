@@ -5,6 +5,7 @@ html {
   align-content: center;
   position: relative;
   background-color: #c7c7c7;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -83,7 +84,7 @@ a {
 
 a:hover {
   text-shadow: 0 0 10px #000000ce;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 li,
