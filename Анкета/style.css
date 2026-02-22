@@ -1,0 +1,77 @@
+html {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  background-color: #ff747f;
+}
+
+.card {
+  display: flex;
+  width: 1000px;
+
+  background: linear-gradient(
+    18deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(244, 0, 161, 1) 50%,
+    rgba(158, 27, 50, 1) 100%
+  );
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 10px #381e2e9c;
+  overflow: hidden;
+  text-wrap: wrap;
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cadrincard {
+  display: flex;
+  box-shadow: 0 0 10px 10px #0000009c;
+  width: 60%;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  justify-self: center;
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+  display: block;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+a {
+  font-size: 18px;
+  transition:
+    text-shadow 100ms,
+    font-size 100ms;
+}
+
+a:hover {
+  text-shadow: 0 0 10px #000000ce;
+  font-size: 24px;
+}
+
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
