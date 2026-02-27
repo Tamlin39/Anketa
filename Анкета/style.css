@@ -105,12 +105,14 @@ p {
 .mental {
   width: 80%;
   display: block;
-  height: 550px;
+  height: 600px;
   overflow-y: scroll;
   text-wrap: wrap;
   transition:
     scale 200ms,
     box-shadow 200ms;
+  align-items: center;
+  justify-items: center;
 }
 
 .bio:hover,
@@ -157,5 +159,3 @@ p {
 .left .right {
   border-radius: 10px;
 }
-
-
